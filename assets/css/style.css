@@ -1,3 +1,17 @@
 body {
-    background-color: red;
+    padding-bottom: 50px;
+    font-family: Arial, sans-serif;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.info-box{
+    border: 1px solid lightgray;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius:5px;
+    padding: 15px;
+    background-color: lightcyan;
 }

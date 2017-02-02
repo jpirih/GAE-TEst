@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <!-- javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="/assets/js/bootstrap.js"></script>
+
+
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <!-- tab title  -->
+    <title> App | {% block title %}{% endblock %} </title>
+</head>
+<body>
+<!-- top navigation section  -->
+<div class="navbar navbar-inverse">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top_nav">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="/" class="navbar-brand">WebApp2</a>
+        </div>
+        <div class="collapse navbar-collapse" id="top_nav">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/printing">Printing</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- content section  -->
+<div class="container">
+    {% block content %}
+    {%  endblock %}
+</div>
+
+</body>
+</html>

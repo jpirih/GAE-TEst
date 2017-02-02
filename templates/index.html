@@ -1,0 +1,25 @@
+{%  extends "base.html" %}
+
+{% block title %} Home{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-sm-6 col-sm-offset-3">
+        <h1 class="page-header">Hello, SmartNinja!</h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-4">
+        <div class="alert alert-info">
+            <span class="glyphicon glyphicon-info-sign"></span>
+            {{ message }}
+        </div>
+    </div>
+    <div class="col-sm-offset-4 col-sm-4">
+        <div class="well">
+            <p class="bold">Točen čas: {{ date }}</p>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
